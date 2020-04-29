@@ -1,0 +1,16 @@
+{
+  "stories": [
+    {
+      "question": "First",
+      "answer": "Hey"
+    },
+    {
+      "question": "Second",
+      "answer": "Hi"
+    },
+    {
+      "question": "Third",
+      "answer": "Hello"
+    }
+  ]
+}
