@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
+import Icaro from "../../static/assets/img/icaro-de-carvalho.jpg"
 
 const GlobalStyle = createGlobalStyle`
   .iphone {
@@ -65,10 +66,54 @@ const ContainerStories = styled.div`
   position: relative;
 `
 
-const ContainerStoriesContent = styled.div``
+const ContainerStoriesContent = styled.div`
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (max-width: 1099px) {
+    width: 275px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    top: 50px;
+    width: 80%;
+  }
+`
+
+const ContainerStoriesContentHeader = styled.div`
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed #fff;
+  padding: 8px 0 16px;
+
+  & img {
+    height: 25px;
+    border-radius: 50px;
+  }
+
+  & a {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 12px;
+    color: #fff;
+  }
+`
+
+const Question = styled.h3`
+  font-size: 14px;
+  padding-bottom: 16px;
+`
+
+const Answer = styled.p`
+  font-size: 11px;
+  line-height: 1.5;
+`
 
 const API =
-  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json?token=ACGU4E3FOHBC7FDYUXSPZSK6VTS2M"
+  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json?token=ACGU4E6QRFXSQIMT75FOYOS6VXSLG"
 
 class RandomStory extends React.Component {
   state = {
@@ -103,16 +148,29 @@ class RandomStory extends React.Component {
         <ContainerStories>
           <Iphone className="iphone" />
 
-          <ContainerStoriesContent></ContainerStoriesContent>
-          <div className="header">
-            {this.state.randomStory !== null && this.state.randomStory.question}
-          </div>
-          <div className="description">
-            {this.state.randomStory !== null && this.state.randomStory.answer}
-          </div>
+          <ContainerStoriesContent>
+            <ContainerStoriesContentHeader>
+              <img src={Icaro} alt="Ícaro de Carvalho" />
+              <a
+                href="https://instagram.com/icaro.decarvalho"
+                rel="noopener noreferrer"
+              >
+                icaro.decarvalho
+              </a>
+            </ContainerStoriesContentHeader>
+
+            <Question>
+              {this.state.randomStory !== null &&
+                this.state.randomStory.question}
+            </Question>
+
+            <Answer>
+              {this.state.randomStory !== null && this.state.randomStory.answer}
+            </Answer>
+          </ContainerStoriesContent>
         </ContainerStories>
 
-        <Button onClick={this.randomStoryHandler}>Gerar story</Button>
+        <Button onClick={this.randomStoryHandler}>Gerar novo story</Button>
       </Container>
     )
   }
