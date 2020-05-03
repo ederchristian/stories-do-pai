@@ -1,5 +1,6 @@
 import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle, keyframes } from "styled-components"
+import { fadeInLeft } from "react-animations"
 import RandomStory from "./components/RandomStory/RandomStory"
 
 const GlobalStyle = createGlobalStyle`
@@ -48,6 +49,7 @@ const LinkGitHub = styled.a`
   text-align: center;
 
   @media screen and (min-width: 1100px) {
+    top: 12px;
     left: initial;
   }
 `
@@ -67,6 +69,7 @@ const Header = styled.header`
   align-items: center;
   justify-content: center;
   padding: 16px 0;
+  animation: 2s ${keyframes`${fadeInLeft}`};
 
   @media screen and (min-width: 1100px) {
     align-items: flex-start;

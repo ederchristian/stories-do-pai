@@ -1,5 +1,6 @@
 import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle, keyframes } from "styled-components"
+import { fadeInRight } from "react-animations"
 import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
 import Icaro from "../../static/assets/img/icaro-de-carvalho.jpg"
 
@@ -52,6 +53,8 @@ const Button = styled.button`
 `
 
 const Container = styled.div`
+  animation: 2s ${keyframes`${fadeInRight}`};
+
   @media screen and (min-width: 1100px) {
     max-width: 400px;
   }
