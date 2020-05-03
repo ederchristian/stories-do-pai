@@ -17,7 +17,8 @@ const GlobalStyle = createGlobalStyle`
     margin: auto;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
-    padding: 8px 0 32px;
+    padding: 32px 0;
+    position: relative;
 
     @media screen and (min-width: 1100px) {
       display: flex;
@@ -32,6 +33,22 @@ const GlobalStyle = createGlobalStyle`
   #root {
     width: 100%;
     margin: 0 auto;
+  }
+`
+
+const LinkGitHub = styled.a`
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: 1100px) {
+    left: initial;
   }
 `
 
@@ -92,6 +109,15 @@ function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
+
+      <LinkGitHub
+        href="https://github.com/ederchristian/stories-do-pai"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Ver no GitHub
+      </LinkGitHub>
+
       <Main>
         <Header>
           <Title>Stories do Pai</Title>
