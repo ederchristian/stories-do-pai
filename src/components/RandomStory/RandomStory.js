@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media screen and (min-width: 1100px) {
-      width: 310px;
+      width: 315px;
     }
   }
 `
@@ -68,16 +68,13 @@ const ContainerStories = styled.div`
 
 const ContainerStoriesContent = styled.div`
   position: absolute;
-  top: 80px;
+  top: 50px;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 
-  @media screen and (max-width: 1099px) {
-    width: 275px;
-  }
-
   @media screen and (min-width: 1100px) {
-    top: 50px;
+    top: 45px;
     width: 80%;
   }
 `
@@ -86,7 +83,8 @@ const ContainerStoriesContentHeader = styled.div`
   display: flex;
   align-items: center;
   border-top: 1px dashed #fff;
-  padding: 8px 0 16px;
+  padding: 8px 0 12px;
+  position: relative;
 
   & img {
     height: 25px;
@@ -100,20 +98,61 @@ const ContainerStoriesContentHeader = styled.div`
     margin-left: 12px;
     color: #fff;
   }
+
+  & span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-weight: 100;
+    -webkit-transform: scale(1.5, 1);
+    -moz-transform: scale(1.5, 1);
+    -ms-transform: scale(1.5, 1);
+    -o-transform: scale(1.5, 1);
+    transform: scale(1.5, 1);
+  }
+`
+
+const BoxQuestion = styled.div`
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+`
+
+const BoxQuestionHeader = styled.div`
+  width: 100%;
+  background-color: #bc2968;
+  padding: 8px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+`
+
+const BoxQuestionHeaderTitle = styled.div`
+  color: #fff;
+  font-size: 11px;
+`
+
+const BoxQuestionBody = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 `
 
 const Question = styled.h3`
-  font-size: 14px;
-  padding-bottom: 16px;
+  color: #bc2968;
+  font-size: 11px;
 `
 
 const Answer = styled.p`
   font-size: 11px;
+  font-weight: 700;
   line-height: 1.5;
+  text-align: left;
 `
 
 const API =
-  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json?token=ACGU4E6QRFXSQIMT75FOYOS6VXSLG"
+  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json?token=ACGU4E7YY4DXOQQO4QFPKRC6VZDXU"
 
 class RandomStory extends React.Component {
   state = {
@@ -154,18 +193,40 @@ class RandomStory extends React.Component {
               <a
                 href="https://instagram.com/icaro.decarvalho"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 icaro.decarvalho
               </a>
+              <span>X</span>
             </ContainerStoriesContentHeader>
 
-            <Question>
-              {this.state.randomStory !== null &&
-                this.state.randomStory.question}
-            </Question>
+            <BoxQuestion>
+              <BoxQuestionHeader>
+                <BoxQuestionHeaderTitle>
+                  Consultoria grátis.
+                </BoxQuestionHeaderTitle>
+              </BoxQuestionHeader>
+
+              <BoxQuestionBody>
+                <Question>
+                  {this.state.randomStory !== null &&
+                    this.state.randomStory.question}
+                </Question>
+              </BoxQuestionBody>
+            </BoxQuestion>
 
             <Answer>
-              {this.state.randomStory !== null && this.state.randomStory.answer}
+              {this.state.randomStory !== null &&
+                this.state.randomStory.answer
+                  .split("\n")
+                  .map(function (item, key) {
+                    return (
+                      <span key={key}>
+                        {item}
+                        <br />
+                      </span>
+                    )
+                  })}
             </Answer>
           </ContainerStoriesContent>
         </ContainerStories>
