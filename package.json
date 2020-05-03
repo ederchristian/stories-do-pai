@@ -1,6 +1,7 @@
 {
   "name": "stories-do-pai",
   "version": "0.1.0",
+  "homepage": "https://ederchristian.com/stories-do-pai/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint src/*.js"
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
     "jest": "^24.9.0",
     "prettier": "2.0.5",
