@@ -17,7 +17,7 @@ import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
 import Icaro from "../../static/assets/img/icaro-de-carvalho.jpg"
 
 const API =
-  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json?token=ACGU4E7IAW7NXW6DY3DSG5C6VZIPY"
+  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json"
 
 class RandomStory extends React.Component {
   state = {
