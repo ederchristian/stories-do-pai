@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/stories-do-pai/static/js/main.d7259a53.chunk.js",
+    "main.js.map": "/stories-do-pai/static/js/main.d7259a53.chunk.js.map",
+    "runtime-main.js": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js",
+    "runtime-main.js.map": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js.map",
+    "static/js/2.a3eb9d2c.chunk.js": "/stories-do-pai/static/js/2.a3eb9d2c.chunk.js",
+    "static/js/2.a3eb9d2c.chunk.js.map": "/stories-do-pai/static/js/2.a3eb9d2c.chunk.js.map",
+    "index.html": "/stories-do-pai/index.html",
+    "precache-manifest.086843dabc7b9fb31c97d8389066c1b5.js": "/stories-do-pai/precache-manifest.086843dabc7b9fb31c97d8389066c1b5.js",
+    "service-worker.js": "/stories-do-pai/service-worker.js",
+    "static/js/2.a3eb9d2c.chunk.js.LICENSE.txt": "/stories-do-pai/static/js/2.a3eb9d2c.chunk.js.LICENSE.txt",
+    "static/media/icaro-de-carvalho.jpg": "/stories-do-pai/static/media/icaro-de-carvalho.47dc1b91.jpg",
+    "static/media/iphone-x.cd2a8aa7.svg": "/stories-do-pai/static/media/iphone-x.cd2a8aa7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdfcbd22.js",
+    "static/js/2.a3eb9d2c.chunk.js",
+    "static/js/main.d7259a53.chunk.js"
+  ]
+}
