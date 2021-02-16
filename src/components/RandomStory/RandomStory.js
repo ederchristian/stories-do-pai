@@ -1,105 +1,98 @@
-import React from "react"
-import {
-  GlobalStyle,
-  Button,
-  Container,
-  ContainerStories,
-  ContainerStoriesContent,
-  ContainerStoriesContentHeader,
-  BoxQuestion,
-  BoxQuestionHeader,
-  BoxQuestionHeaderTitle,
-  BoxQuestionBody,
-  Question,
-  Answer,
-} from "./style"
-import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
+import React, { useState, useEffect } from "react"
+
 import Icaro from "../../static/assets/img/icaro-de-carvalho.jpg"
+import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
 
-const API =
-  "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json"
+import { GlobalStyle } from "../Styled/global"
+import * as Styled from "./style"
 
-class RandomStory extends React.Component {
-  state = {
-    stories: null,
-    randomStory: null,
-  }
+export default function RandomStory() {
+  const [stories, setStories] = useState(null)
 
-  componentDidMount() {
-    fetch(API)
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({
-          stories: data.stories,
-        })
+  const data =
+    "https://raw.githubusercontent.com/ederchristian/stories-do-pai/master/src/stories.json"
+
+  const getData = () => {
+    fetch(data, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (stories) {
+        setStories(stories)
       })
   }
 
-  randomStoryHandler = () => {
-    const randomNumber = Math.floor(Math.random() * this.state.stories.length)
-    const randomStory = this.state.stories[randomNumber]
+  useEffect(() => {
+    getData()
+  }, [data])
 
-    this.setState({
-      randomStory,
-    })
-  }
+  // randomStoryHandler = () => {
+  //   const randomNumber = Math.floor(Math.random() * this.state.stories.length)
+  //   const randomStory = this.state.stories[randomNumber]
 
-  render() {
-    return (
-      <Container>
-        <GlobalStyle />
+  //   this.setState({
+  //     randomStory,
+  //   })
+  // }
 
-        <ContainerStories>
-          <Iphone className="iphone" />
+  return (
+    <Styled.Container>
+      <GlobalStyle />
 
-          <ContainerStoriesContent>
-            <ContainerStoriesContentHeader>
-              <img src={Icaro} alt="Ícaro de Carvalho" />
-              <a
-                href="https://instagram.com/icaro.decarvalho"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                icaro.decarvalho
-              </a>
-              <span>X</span>
-            </ContainerStoriesContentHeader>
+      <Styled.ContainerStories>
+        <Iphone className="iphone" />
 
-            <BoxQuestion>
-              <BoxQuestionHeader>
-                <BoxQuestionHeaderTitle>
-                  Consultoria grátis.
-                </BoxQuestionHeaderTitle>
-              </BoxQuestionHeader>
+        <Styled.ContainerStoriesContent>
+          <Styled.ContainerStoriesContentHeader>
+            <img src={Icaro} alt="Ícaro de Carvalho" />
+            <a
+              href="https://instagram.com/icaro.decarvalho"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              icaro.decarvalho
+            </a>
+            <span>X</span>
+          </Styled.ContainerStoriesContentHeader>
 
-              <BoxQuestionBody>
-                <Question>
-                  {this.state.randomStory !== null &&
-                    this.state.randomStory.question}
-                </Question>
-              </BoxQuestionBody>
-            </BoxQuestion>
+          {/* <Styled.BoxQuestion>
+            <Styled.BoxQuestionHeader>
+              <Styled.BoxQuestionHeaderTitle>
+                Consultoria grátis.
+              </Styled.BoxQuestionHeaderTitle>
+            </Styled.BoxQuestionHeader>
 
-            <Answer>
-              {this.state.randomStory !== null &&
-                this.state.randomStory.answer
-                  .split("\n")
-                  .map(function (item, key) {
-                    return (
-                      <span key={key}>
-                        {item}
-                        <br />
-                      </span>
-                    )
-                  })}
-            </Answer>
-          </ContainerStoriesContent>
-        </ContainerStories>
+            <Styled.BoxQuestionBody>
+              <Styled.Question>
+                {stories !== null &&
+                  stories.question}
+              </Styled.Question>
+            </Styled.BoxQuestionBody>
+          </Styled.BoxQuestion>
 
-        <Button onClick={this.randomStoryHandler}>Gerar novo story</Button>
-      </Container>
-    )
-  }
+          <Styled.Answer>
+            {stories !== null &&
+              stories.answer
+                .split("\n")
+                .map(function (item, key) {
+                  return (
+                    <span key={key}>
+                      {item}
+                      <br />
+                    </span>
+                  )
+                })}
+          </Styled.Answer> */}
+        </Styled.ContainerStoriesContent>
+      </Styled.ContainerStories>
+
+      <Styled.Button>Gerar novo story</Styled.Button>
+      {/* <Styled.Button onClick={this.randomStoryHandler}>Gerar novo story</Styled.Button> */}
+    </Styled.Container>
+  )
 }
-
-export default RandomStory

@@ -1,19 +1,5 @@
-import styled, { createGlobalStyle, keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { fadeInRight } from "react-animations"
-
-export const GlobalStyle = createGlobalStyle`
-  .iphone {
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-      width: 350px;
-    }
-
-    @media screen and (min-width: 1100px) {
-      width: 315px;
-    }
-  }
-`
 
 export const Button = styled.button`
   width: 100%;
