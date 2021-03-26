@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from "../../components/Header"
-import RandomStory from "../../components/RandomStory/RandomStory"
+import RandomStory from "../../components/RandomStory"
 
 import * as Styled from "./styled"
 
