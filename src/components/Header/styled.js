@@ -30,7 +30,7 @@ export const Subtitle = styled.h2`
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -44,4 +44,11 @@ export const Subtitle = styled.h2`
     max-width: 500px;
     text-align: initial;
   }
+`
+
+export const LinkGitHub = styled.a`
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 32px;
 `

@@ -10,6 +10,13 @@ export default function Header() {
         Gere stories do Instagram com alguns dos maiores ensinamentos de +12
         anos de experiência de Ícaro de Carvalho
       </Styled.Subtitle>
+      <Styled.LinkGitHub
+        href="https://github.com/ederchristian/stories-do-pai"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Ver no GitHub
+      </Styled.LinkGitHub>
     </Styled.Header>
   )
 }
