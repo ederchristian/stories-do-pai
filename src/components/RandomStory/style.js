@@ -37,9 +37,17 @@ export const ContainerStoriesContent = styled.div`
   position: absolute;
   top: 50px;
   width: 80%;
-  max-width: 290px;
   margin: 0 auto;
   text-align: center;
+
+  @media screen and (min-width: 568px) {
+    top: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 50px;
+    max-width: 295px;
+  }
 
   @media screen and (min-width: 1100px) {
     top: 45px;
