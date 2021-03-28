@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cd603625f2ae406ef9d56b5582a32b3",
+    "revision": "05593a1fda3daf1c29d445a0692d3018",
     "url": "/stories-do-pai/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stories-do-pai/static/js/2.6c1202ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd0e226c408a811a0646",
-    "url": "/stories-do-pai/static/js/main.2de110fc.chunk.js"
+    "revision": "6bc001da3b44711a6e97",
+    "url": "/stories-do-pai/static/js/main.64c15847.chunk.js"
   },
   {
     "revision": "ca31b6beab5558b9e341",

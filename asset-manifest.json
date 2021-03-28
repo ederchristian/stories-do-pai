@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/stories-do-pai/static/js/main.2de110fc.chunk.js",
-    "main.js.map": "/stories-do-pai/static/js/main.2de110fc.chunk.js.map",
+    "main.js": "/stories-do-pai/static/js/main.64c15847.chunk.js",
+    "main.js.map": "/stories-do-pai/static/js/main.64c15847.chunk.js.map",
     "runtime-main.js": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js",
     "runtime-main.js.map": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js.map",
     "static/js/2.6c1202ed.chunk.js": "/stories-do-pai/static/js/2.6c1202ed.chunk.js",
     "static/js/2.6c1202ed.chunk.js.map": "/stories-do-pai/static/js/2.6c1202ed.chunk.js.map",
     "index.html": "/stories-do-pai/index.html",
-    "precache-manifest.fe184ef9b9477d05bcd088c5d68d801f.js": "/stories-do-pai/precache-manifest.fe184ef9b9477d05bcd088c5d68d801f.js",
+    "precache-manifest.8fa1d933500a38b8460d60dfdb7501f7.js": "/stories-do-pai/precache-manifest.8fa1d933500a38b8460d60dfdb7501f7.js",
     "service-worker.js": "/stories-do-pai/service-worker.js",
     "static/js/2.6c1202ed.chunk.js.LICENSE.txt": "/stories-do-pai/static/js/2.6c1202ed.chunk.js.LICENSE.txt",
     "static/media/icaro-de-carvalho.jpg": "/stories-do-pai/static/media/icaro-de-carvalho.b131b65b.jpg",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.bdfcbd22.js",
     "static/js/2.6c1202ed.chunk.js",
-    "static/js/main.2de110fc.chunk.js"
+    "static/js/main.64c15847.chunk.js"
   ]
 }
