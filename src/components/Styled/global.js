@@ -37,16 +37,4 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
     }
   }
-
-  .iphone {
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-      width: 350px;
-    }
-
-    @media screen and (min-width: 1100px) {
-      width: 315px;
-    }
-  }
 `
