@@ -10,7 +10,12 @@ import * as Styled from "./styled"
 function App() {
   return (
     <Styled.Main>
-      <Styled.Logo src={LogoEder} alt="Logo Eder Christian" />
+      <Styled.LinkEder
+        href="https://ederchristian.com"
+        rel="noopener noreferrer"
+      >
+        <Styled.Logo src={LogoEder} alt="Logo Eder Christian" />
+      </Styled.LinkEder>
       <Header />
       <RandomStory />
     </Styled.Main>

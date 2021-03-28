@@ -12,8 +12,8 @@ export const Main = styled.div`
   }
 `
 
-export const Logo = styled.img`
-  width: 150px;
+export const LinkEder = styled.a`
+  cursor: pointer;
   margin-bottom: 32px;
 
   @media screen and (min-width: 1100px) {
@@ -22,4 +22,9 @@ export const Logo = styled.img`
     left: 0;
     margin-bottom: 0;
   }
+`
+
+export const Logo = styled.img`
+  width: 100%;
+  max-width: 150px;
 `
