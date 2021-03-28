@@ -19,6 +19,20 @@ export const ContainerStories = styled.div`
   position: relative;
 `
 
+export const IphoneImage = styled.img`
+  width: 100%;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 315px;
+    padding-bottom: 0;
+  }
+`
+
 export const ContainerStoriesContent = styled.div`
   position: absolute;
   top: 50px;
@@ -40,11 +54,6 @@ export const ContainerStoriesContentHeader = styled.div`
   padding: 8px 0 12px;
   position: relative;
 
-  & img {
-    height: 25px;
-    border-radius: 50px;
-  }
-
   & a {
     font-size: 12px;
     font-weight: 700;
@@ -60,6 +69,11 @@ export const ContainerStoriesContentHeader = styled.div`
     font-weight: 100;
     transform: scale(1.5, 1);
   }
+`
+
+export const ImageIcaro = styled.img`
+  height: 25px;
+  border-radius: 50px;
 `
 
 export const BoxQuestion = styled.div`

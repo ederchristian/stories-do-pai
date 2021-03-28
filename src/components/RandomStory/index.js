@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useEffect } from "react"
 
 import Icaro from "../../static/assets/img/icaro-de-carvalho.jpg"
-import { ReactComponent as Iphone } from "../../static/assets/svg/iphone-x.svg"
+import Iphone from "../../static/assets/svg/iphone-x.svg"
 
 import { GlobalStyle } from "../Styled/global"
 import * as Styled from "./style"
@@ -45,11 +45,11 @@ export default function RandomStory() {
       <GlobalStyle />
 
       <Styled.ContainerStories>
-        <Iphone className="iphone" />
+        <Styled.IphoneImage src={Iphone} alt="Imagem de um iPhone" />
 
         <Styled.ContainerStoriesContent>
           <Styled.ContainerStoriesContentHeader>
-            <img src={Icaro} alt="Ícaro de Carvalho" />
+            <Styled.ImageIcaro src={Icaro} alt="Ícaro de Carvalho" />
             <a
               href="https://instagram.com/icaro.decarvalho"
               rel="noopener noreferrer"
