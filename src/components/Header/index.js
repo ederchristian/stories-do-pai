@@ -1,5 +1,7 @@
 import React from "react"
 
+import AdSense from "react-adsense"
+
 import * as Styled from "./styled"
 
 export default function Header() {
@@ -17,6 +19,13 @@ export default function Header() {
       >
         Ver no GitHub
       </Styled.LinkGitHub>
+      <AdSense.Google
+        client="ca-pub-3992890004059934"
+        slot=""
+        style={{ display: "block", width: "100%" }}
+        layout="in-article"
+        format="fluid"
+      />
     </Styled.Header>
   )
 }
