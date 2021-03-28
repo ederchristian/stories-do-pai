@@ -117,11 +117,6 @@ export const Button = styled.button`
   cursor: pointer;
   transition: var(--mainTransition);
 
-  &:hover {
-    background-color: var(--blue);
-    color: var(--red);
-  }
-
   @media screen and (max-width: 1023px) {
     position: fixed;
     left: 0;
@@ -138,5 +133,10 @@ export const Button = styled.button`
 
   @media screen and (min-width: 1100px) {
     width: 100%;
+
+    &:hover {
+      background-color: var(--blue);
+      color: var(--red);
+    }
   }
 `
