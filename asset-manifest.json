@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/stories-do-pai/static/js/main.64c15847.chunk.js",
-    "main.js.map": "/stories-do-pai/static/js/main.64c15847.chunk.js.map",
+    "main.js": "/stories-do-pai/static/js/main.c022f330.chunk.js",
+    "main.js.map": "/stories-do-pai/static/js/main.c022f330.chunk.js.map",
     "runtime-main.js": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js",
     "runtime-main.js.map": "/stories-do-pai/static/js/runtime-main.bdfcbd22.js.map",
-    "static/js/2.6c1202ed.chunk.js": "/stories-do-pai/static/js/2.6c1202ed.chunk.js",
-    "static/js/2.6c1202ed.chunk.js.map": "/stories-do-pai/static/js/2.6c1202ed.chunk.js.map",
+    "static/js/2.db4277da.chunk.js": "/stories-do-pai/static/js/2.db4277da.chunk.js",
+    "static/js/2.db4277da.chunk.js.map": "/stories-do-pai/static/js/2.db4277da.chunk.js.map",
     "index.html": "/stories-do-pai/index.html",
-    "precache-manifest.8fa1d933500a38b8460d60dfdb7501f7.js": "/stories-do-pai/precache-manifest.8fa1d933500a38b8460d60dfdb7501f7.js",
+    "precache-manifest.d8a9d945bc06536590bfb46dfb3b4419.js": "/stories-do-pai/precache-manifest.d8a9d945bc06536590bfb46dfb3b4419.js",
     "service-worker.js": "/stories-do-pai/service-worker.js",
-    "static/js/2.6c1202ed.chunk.js.LICENSE.txt": "/stories-do-pai/static/js/2.6c1202ed.chunk.js.LICENSE.txt",
+    "static/js/2.db4277da.chunk.js.LICENSE.txt": "/stories-do-pai/static/js/2.db4277da.chunk.js.LICENSE.txt",
     "static/media/icaro-de-carvalho.jpg": "/stories-do-pai/static/media/icaro-de-carvalho.b131b65b.jpg",
     "static/media/iphone-x.svg": "/stories-do-pai/static/media/iphone-x.cd2a8aa7.svg",
     "static/media/logo-eder-christian.svg": "/stories-do-pai/static/media/logo-eder-christian.c292a31a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bdfcbd22.js",
-    "static/js/2.6c1202ed.chunk.js",
-    "static/js/main.64c15847.chunk.js"
+    "static/js/2.db4277da.chunk.js",
+    "static/js/main.c022f330.chunk.js"
   ]
 }
