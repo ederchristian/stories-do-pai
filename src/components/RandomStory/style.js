@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components"
 import { fadeInRight } from "react-animations"
 
 export const Container = styled.div`
+  position: relative;
   animation: 2s ${keyframes`${fadeInRight}`};
 
   @media screen and (min-width: 1100px) {
@@ -22,6 +23,7 @@ export const ContainerStoriesContent = styled.div`
   position: absolute;
   top: 50px;
   width: 80%;
+  max-width: 290px;
   margin: 0 auto;
   text-align: center;
 
@@ -100,7 +102,7 @@ export const Answer = styled.p`
 `
 
 export const Button = styled.button`
-  width: 100%;
+  width: 90%;
   color: var(--white);
   font-size: 16px;
   font-weight: 700;
@@ -118,6 +120,15 @@ export const Button = styled.button`
   &:hover {
     background-color: var(--blue);
     color: var(--red);
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    margin: auto;
+    max-width: 420px;
   }
 
   @media screen and (min-width: 768px) {
