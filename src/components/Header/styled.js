@@ -52,11 +52,3 @@ export const LinkGitHub = styled.a`
   font-weight: 700;
   padding-bottom: 32px;
 `
-
-export const AdSenseWrapper = styled.div`
-  display: none;
-
-  @media screen and (min-width: 1100px) {
-    width: 100%;
-  }
-`

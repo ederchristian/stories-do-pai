@@ -42,7 +42,6 @@
     "jest": "^24.9.0",
     "prettier": "2.0.5",
     "pretty-quick": "^2.0.1",
-    "react-adsense": "^0.1.0",
     "react-animations": "^1.0.0",
     "styled-components": "^5.1.0"
   },
